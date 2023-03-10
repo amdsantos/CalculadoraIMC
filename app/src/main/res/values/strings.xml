@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">imc</string>
+    <string name="textView_imc">IMC</string>
+    <string name="textView_calc">Calculadora</string>
+    <string name="textView_login">LOGIN</string>
+    <string name="editTextEmail">Digite seu e-maill</string>
+    <string name="editTextPassword">Digite sua senha</string>
+    <string name="buttonLogin">Login</string>
+
+
+
+</resources>

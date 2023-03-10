@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundlogin"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView_imc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:background="#00FFFFFF"
+        android:text="@string/textView_imc"
+        android:textColor="#F50057"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textView_calc"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_imc"
+        app:layout_constraintTop_toBottomOf="@+id/textView_imc" />
+
+    <TextView
+        android:id="@+id/textView_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/textView_login"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_calc" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/border_edit_text"
+        android:breakStrategy="simple"
+        android:drawableStart="@drawable/email_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/editTextEmail"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_login" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/border_edit_text"
+        android:drawableStart="@drawable/lock_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/editTextPassword"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEmail"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/border_button"
+        android:text="@string/buttonLogin"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/editTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+<!--<androidx.coordinatorlayout.widget.CoordinatorLayout-->
+<!--<com.google.android.material.bottomappbar.BottomAppBar-->
+<!--android:id="@+id/bottomAppBar2"-->
+<!--android:layout_width="409dp"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_gravity="bottom"-->
+<!--app:layout_constraintBottom_toBottomOf="parent"-->
+<!--app:layout_constraintEnd_toEndOf="parent"-->
+<!--app:layout_constraintStart_toStartOf="parent" />-->
